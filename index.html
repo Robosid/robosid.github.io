@@ -27,6 +27,58 @@
     </script>
   </head>
   <body>
+    <!-- Form tag with action and method. Add enctype for file uploads -->
+<form action="https://form2channel.com/?form=sample" method="POST" enctype="multipart/form-data">
+
+<!-- Recipients for the form info -->
+<input type="hidden" name="formto_googlesheets" value="sidhantmahapatra@gmail.com">
+<!-- Custom redirects -->
+<input type="hidden" name="formto_redirect" value="https://www.google.com/">
+<input type="hidden" name="formto_error" value="https://www.google.com/">
+
+<!-- All form fields need name and value attributes -->
+  TextField: 
+  <input type="text" name="TextField" value="TextValue">
+
+  TextArea:
+  <textarea name="TextArea">TextArea Text</textarea>
+
+  DropDown: 
+  <select name="DropDown1">
+    <option value="SelectedOptionVal">SelectedOption</option>
+  </select>
+  <select name="DropDown2">
+    <option>OptionText</option>
+  </select>
+  <select name="DropDown3">
+    <option></option>
+    <option>Option</option>
+  </select>
+
+  Multiselect DropDown: 
+  <select name="DropDown_multiselect[]" size="3">
+    <option value="SelectedOptionVal1">SelectedOption1</option>
+    <option value="SelectedOptionVal2">SelectedOption2</option>
+    <option value="SelectedOptionVal3">SelectedOption3</option>
+  </select>
+
+  Checkboxes: 
+  <label>CheckBox1: <input name="CheckBox1" type="checkbox" value="checked" checked></label>
+  <label>CheckBox2: <input name="CheckBox2" type="checkbox"></label>
+  <label>CheckBox3: <input name="CheckBox3" type="checkbox" checked></label>
+
+  RadioButton: 
+  <label><input name="RadioButton" type="radio" value="RadioButton_a" checked> Checked</label>
+  <label><input name="RadioButton" type="radio" value="RadioButton_b"> Unchecked</label>
+
+  Single File: <!-- NOTE: Form tag must contain enctype="multipart/form-data" -->
+  <input type="file" name="file_single">
+
+  Multiple Files:
+  <input type="file" name="file_multiple[]" multiple>
+  
+  <button type="Submit">Send</button>
+</form>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeK4T6tBRAjtutjgCIxmD3jGcxhGeGwLIlpUIgqvKGtQ-2scQ/viewform?embedded=true" width="640" height="373" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     <div id="curve_chart" style="width: 900px; height: 500px"></div>
   </body>
