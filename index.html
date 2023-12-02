@@ -1,31 +1,6 @@
   <html>
   <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
-
-        var options = {
-          title: 'Company Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
+      </head>
   <body>
     <!-- Form tag with action and method. Add enctype for file uploads -->
 <form action="https://form2channel.com/?form=sample" method="POST" enctype="multipart/form-data">
@@ -79,8 +54,6 @@
   
   <button type="Submit">Send</button>
 </form>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeK4T6tBRAjtutjgCIxmD3jGcxhGeGwLIlpUIgqvKGtQ-2scQ/viewform?embedded=true" width="640" height="373" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
   </body>
 </html>
 
